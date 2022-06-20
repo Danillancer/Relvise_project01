@@ -780,6 +780,7 @@ border: 1px solid #FF7B47;
 
 .footer {
    background: #17213C;
+   margin-top: 40px;
 }
 .footer__container {
    display: flex;
