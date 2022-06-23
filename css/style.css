@@ -119,6 +119,9 @@ body.noscroll {
    background-color: rgb(0, 0, 0);
    transition: 0.2s;
  }
+ .header__menu{
+   transition: .5s all;
+ }
  @media (max-width: 992px){
    .header__logo{
       margin-right: 80px;
@@ -134,7 +137,7 @@ body.noscroll {
    display: flex;
  }
    .menu{
-      transform: translateY(-500px);
+      transform: translateX(-500px);
       flex-direction: column;
       align-items: center;
       background-color:#0D5C63;
@@ -144,14 +147,14 @@ body.noscroll {
       top: 0;
       left: 0;
       padding: 50px 0;
-      transition: .5s;
+      transition: .5s all;
    }
    .menu__item:not(:last-child) {
       margin-right: 0px;
       padding-bottom: 20px;
    }
    .menu.active{
-      transform: translateY(0px);
+      transform: translateX(0px);
       transition: .5s;
    }
    .hamb__field.active .bar:nth-child(2) {
