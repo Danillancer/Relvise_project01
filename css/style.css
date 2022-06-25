@@ -203,6 +203,7 @@ background: #FF7B47;
 border-radius: 37px;
 color: white;
 padding: 10px 25px;
+transition: 1s all;
 }
 .main__button:nth-child(1):hover{
    margin-right: 10px;
@@ -219,6 +220,7 @@ padding: 10px 25px;
    border-radius: 37px;
    border: 1px solid #0D5C63;
    padding: 10px 24px;
+   transition: 1s all;
    }
 .main__button:nth-child(2):hover{
    margin-right: 10px;
@@ -284,6 +286,21 @@ box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
 .card {
    background: #FFFFFF;
    padding: 35px 40px;
+   transition: 1s all;
+}
+.card:hover {
+   background: #0D5C63;
+   color: #FFFFFF ;
+   
+}
+.card:hover>.card__img {
+   color: #FFFFFF ;
+}
+.card:hover>.card__title {
+   color: #FFFFFF ;
+}
+.card:hover svg{
+  fill: #FFFFFF;
 }
 
 
@@ -296,13 +313,11 @@ color: #252B42;
 margin: 10px 0 10px 0;
 }
 
-.card-green{
-   background: #0D5C63;
-   color: #FFFFFF;
+.card__img {
+   font-size: 48px;
+   color: #0D5C63;
 }
-.card-green>.card__title{
-   color: #FFFFFF;
-}
+
 @media (max-width: 1010px){
    .services__row{
       flex-wrap: wrap;
@@ -659,18 +674,23 @@ padding: 15px 22px;
    text-align: center;
    margin-top: 80px;
 }
-.contact__card:nth-child(2) {
+.contact__card:hover{
    background: #252B42;
    color: #FFFFFF;
+   transition: 1s all;
 }
-.contact__card:nth-child(2) *{
+.contact__card:hover svg{
+   fill: #FFFFFF;
+ }
+.contact__card:hover *{
    color: #FFFFFF;
 }
-.contact__card:nth-child(2) button{
+.contact__card:hover button{
    background: #252B42;
    border: 1px solid #FFFFFF;
+   transition: 1s all;
 }
-.contact__card:nth-child(2) button:hover{
+.contact__card button:hover{
    background: #FFFFFF;
    border: 1px solid #252B42;
    color: #252B42;
@@ -679,6 +699,7 @@ padding: 15px 22px;
 .contact__card {
    flex: 1 1 33.333%;
    padding: 80px 50px;
+   transition: 1s all;
 }
 .contact__icon {
    margin-bottom: 15px;
@@ -711,11 +732,13 @@ line-height: 24px;
 letter-spacing: 0.2px;
 padding: 10px 20px;
 color: #FF7B47;
+
 }
 .contact__button:hover{
    color: white;
    border: 1px solid white;
    background: #FF7B47;
+  
 }
 
 @media(max-width:1000px ){
@@ -762,11 +785,13 @@ font-weight: 700;
 font-size: 14px;
 line-height: 28px;
 color: #FFFFFF;
+transition: 1s all;
 }
 .consulting__button:hover {
    background: #FFFFFF ;
 color:#FF7B47;
 border: 1px solid #FF7B47;
+
 }
 
 @media(max-width:767px ){
@@ -819,12 +844,15 @@ margin-bottom: 10px;
    display: flex;
 }
 
-.footer__icon{
+.footer__icon object{
    margin: 0 10px 10px 0;
 }
-
 @media(max-width:767px ){
    .footer__container {
    flex-wrap: wrap;
    }
+}
+
+svg{
+   fill: #0D5C63;
 }
